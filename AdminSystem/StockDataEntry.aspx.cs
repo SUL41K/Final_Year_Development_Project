@@ -144,5 +144,34 @@ public partial class _1_DataEntry : System.Web.UI.Page
     {
         Response.Redirect("StockList.aspx");
     }
+
+    protected void btnFndName_Click(object sender, EventArgs e)
+    {
+        //creates new instance of clsStock
+        clsStock AnStock = new clsStock();
+        String gameName;
+        Boolean Found = false;
+        //convert gameID textbox into the Int32 Data Type
+        gameName = Convert.ToString(txtGameName.Text);
+        Found = AnStock.FindName(gameName);
+        //if statement. If found to be true then it updates the details
+        if (Found == true)
+        {
+            txtGameID.Text = AnStock.gameID.ToString();
+            txtGameName.Text = AnStock.gameName;
+            txtAgeRating.Text = AnStock.AgeRating.ToString();
+            txtPrice.Text = AnStock.Price.ToString();
+            txtDate.Text = AnStock.ReleaseDate.ToString();
+        }
+
+        //if data is not found then open up a error message
+        else if (Found == false)
+        {
+            //message to convey record not found
+            lblError.Text = ("This record does not exist");
+        }
+
+    }
 }
+
 

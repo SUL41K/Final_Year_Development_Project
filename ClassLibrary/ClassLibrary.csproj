@@ -50,13 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsEmployee.cs" />
     <Compile Include="clsCustomer.cs" />
     <Compile Include="clsCustomerCollection.cs" />
     <Compile Include="clsDataConnection.cs" />
+    <Compile Include="clsEmployeeCollections.cs" />
     <Compile Include="clsOrder.cs" />
     <Compile Include="clsOrderCollection.cs" />
     <Compile Include="clsStock.cs" />
     <Compile Include="clsStockCollection.cs" />
+    <Compile Include="clsTrade.cs" />
+    <Compile Include="clsTradeCollections.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

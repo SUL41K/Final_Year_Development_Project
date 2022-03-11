@@ -11,4 +11,15 @@ public partial class _1Viewer : System.Web.UI.Page
     {
 
     }
+
+    protected void btnOK_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("StockList.aspx");
+    }
+
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+
+        Response.Redirect("StockList.aspx");
+    }
 }

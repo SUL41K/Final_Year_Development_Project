@@ -120,6 +120,37 @@ public partial class _1_List : System.Web.UI.Page
         //binds data
         lstStockList.DataBind();
     }
+
+    protected void btnCustomer_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("6DataEntry.aspx");
+    }
+
+    protected void btnTrade_Click(object sender, EventArgs e)
+    {
+
+        Response.Redirect("4Viewer.aspx");
+    }
+
+    protected void btLogOut_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("NewLoginPage.aspx");
+    }
+
+    protected void btnPay_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("6Viewer.aspx"); 
+    }
+
+    protected void btnOrder_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("5List.aspx");
+    }
+
+    protected void lstStockList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }
 
 
